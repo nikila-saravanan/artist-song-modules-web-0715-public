@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist
   attr_accessor :name
   attr_reader :songs
@@ -26,7 +28,6 @@ class Artist
 
   def add_song(song)
     @songs << song
-    song.artist = self
   end
 
   def add_songs(songs)
@@ -37,4 +38,4 @@ class Artist
     name.downcase.gsub(' ', '-')
   end
 
-end
+end 
